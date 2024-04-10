@@ -9,9 +9,10 @@ application:
 
 
 database:
-	dsn: 'sqlite::memory:'
-	user:
-	password:
+	#dsn: 'sqlite::memory:'
+	dsn: 'mysql:host=mysql-db;dbname=featuresapp'
+	user: root
+	password: root
 
 
 latte:
