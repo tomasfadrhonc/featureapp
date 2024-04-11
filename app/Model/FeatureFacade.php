@@ -21,8 +21,8 @@ final class FeatureFacade
 
     }
 
-    public function deleteFeature(){
-
+    public function deleteFeature($id){
+        $count = $this->database->table("features")->where('id', $id)->delete();
     }
 
     public function getAllFeatures(){
