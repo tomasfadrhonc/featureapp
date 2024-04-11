@@ -19,6 +19,6 @@ final class HomePresenter extends Nette\Application\UI\Presenter
     }
 
     public function renderDefault(){
-        $this->template->features = $this->features->getAllFeatures();
+
     }
 }

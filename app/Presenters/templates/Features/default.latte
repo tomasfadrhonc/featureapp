@@ -1,0 +1,13 @@
+{* This is the welcome page, you can delete it *}
+
+{block content}
+
+<ul role="list" class="divide-y divide-gray-200">
+    {foreach $features as $feature}
+        <li class="py-4">
+            <a n:href="Features:show $feature->id"><h2>{$feature->title}</h2></a>
+            <p>{$feature->content}</p>
+        </li>
+    {/foreach}
+</ul>
+
