@@ -4,5 +4,19 @@
 
 create
 
-{control featureCreateForm}
+<form n:name=featureCreateForm class="form max-w-xl flex flex-col">
+    <div>
+        <div class="grid grid-cols-4 py-2">
+            <label class="row-span-1" n:name=title>Title:</label>
+            <input n:name=title size=20 class="col-span-3 border border-gray-200 overflow-hidden rounded-md">
+        </div>
+        <div class="grid grid-cols-4 py-2">
+            <label class="row-span-1" n:name=content>Content:</label>
+            <textarea n:name=content class="col-span-3 border border-gray-200 overflow-hidden rounded-md"></textarea>
+        </div>
+    </div>
+    <div class="">
+        <input n:name=send class="relative items-center gap-x-1.5 rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+    </div>
+</form>
 

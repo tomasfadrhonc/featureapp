@@ -32,4 +32,12 @@ final class FeatureFacade
     public function getFeature($id){
         return $this->database->table('features')->get($id);
     }
+
+    public function getFeaturesCount(){
+        return $this->database->table("features")->count();
+    }
+
+    public function getLast5Features(){
+        return $this->database->table("features")->order('created_at DESC')->limit(5);
+    }
 }

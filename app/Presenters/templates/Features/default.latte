@@ -2,12 +2,16 @@
 
 {block content}
 
-<ul role="list" class="divide-y divide-gray-200">
-    {foreach $features as $feature}
-        <li class="py-4">
-            <a n:href="Features:show $feature->id"><h2>{$feature->title}</h2></a>
-            <p>{$feature->content}</p>
-        </li>
-    {/foreach}
-</ul>
+<div class="border border-gray-200 overflow-hidden rounded-md bg-white my-5">
+    <ul role="list" class="">
+        {foreach $features as $feature}
+            <a n:href="Features:show $feature->id">
+                <li class="p-4 hover:bg-gray-50 border-b">
+                    <h2 class="font-bold text-gray-900">{$feature->title}</h2>
+                    <p>{$feature->content}</p>
+                </li>
+            </a>
+        {/foreach}
+    </ul>
+</div>
 
