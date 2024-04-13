@@ -28,8 +28,8 @@
                         <tbody class="divide-y divide-gray-200 bg-white">
                         {foreach $features as $feature}
                             <tr>
-                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">{$feature->title}</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{$feature->content}</td>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">{$feature->title|truncate:16}</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{$feature->content|truncate:32}</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{$feature->created_at}</td>
                                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
